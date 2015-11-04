@@ -1,0 +1,35 @@
+<div class="container">
+	<ul class="list">
+		<li class="pomodoro">
+		<div class="input-label">
+			Type of Timer
+		</div>
+		<select>
+			<option selected value="1">Tomato</option>
+			<option value="2">Hourglass</option>
+			<option value="3">Flip-Down</option>
+			<option value="4">7-segment</option>
+		</select>
+		</label>
+		<li class="pomodoro">
+		<div class="input-label">
+			Number of Tasks
+		</div>
+		<select>
+			<option selected>Read</option>
+			<option>Code</option>
+			<option>Write</option>
+		</select>
+		</label>
+	</ul>
+	<div class="row">
+		<div class="col-phn-6 flex-class countdown">
+			<div class="minute">{{minute.firstnumber}}</div>
+			<div class="minute">{{minute.secondnumber}}</div>
+		</div>
+		<div class="col-phn-6 flex-class countdown">
+			<div class="second">{{second.firstnumber}}</div>
+			<div class="second">{{second.secondnumber}}</div>
+		</div>
+	</div>
+</div>
