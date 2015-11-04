@@ -1,3 +1,46 @@
 [plat-control="navbar"] {
-	
+	position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px black;
+    ul {
+        padding: 0em;
+    }
+    .flex-item {
+        color: #fff;
+        list-style-type: none;
+        font-size: 14px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .navbar {
+            display: none;
+        }
+        .drawer-nav {
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 0px 5px black;
+            -moz-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+        }
+        .navbar-icon {
+            color: #fff;
+            padding: 0.75em;
+        }
+    }
+
+    @media only screen and (min-width: 700px) {
+        .hide-drawer {
+            display: none;
+        }
+    }
 }
