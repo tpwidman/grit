@@ -1,1 +1,24 @@
 <h1>This is the tasks page</h1>
+<div class="container">
+	<div class="row">
+		<div class="col left-col first-col" plat-tap="goToTasks()">
+			<h1>Homework</h1></div>
+		<div class="col right-col second-col" plat-tap="goToLists()">
+			<h1>Chores</h1></div>
+	</div>
+	<div class="row second-row">
+		<div class="col left-col third-col" plat-tap="goToTasks()">
+			<h1>Groceries</h1></div>
+		<div class="col right-col fourth-col" plat-tap="goToLists()">
+			<h1>Car</h1></div>
+	</div>
+</div>
+<div class="footer">
+	<div class="button" plat-tap="expandCustomTask()">
+		<h1>Create Your Own Tasks</h1>
+	</div>
+	<span class="easeDown" plat-visible="{{showCustomTask}}">
+		<plat-input type="text"></plat-input>
+		<button type="submit">Submit</submit>
+	</span>
+</div>
