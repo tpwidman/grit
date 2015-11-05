@@ -7,12 +7,12 @@ export default class HomeViewControl extends BaseViewControl {
     templateString: string = require('./home.vc.html');
 
     context: any = {};
-    
-     goToTasks(): void {
+
+    goToTasks(): void {
       //this needs to navigate to Tasks Page//
         this.navigator.navigate(TasksViewControl);
     }
-    
+
     goToLists(): void {
       //this needs to navigate to Tasks Page//
         this.navigator.navigate(ListsViewControl);

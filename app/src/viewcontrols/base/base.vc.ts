@@ -6,17 +6,8 @@ export default class BaseViewControl extends ui.ViewControl {
     protected Promise: async.IPromise = acquire(async.IPromise);
     protected scrollingContainer: HTMLElement = <HTMLElement>this.document.body;
 
-    context: any = {
-        modals: {
-            modal1: false,
-            modal2: false
-        }
-    }
-
-    toggleModal(parameter: string) : void {
-        this.context.modals[parameter] = !this.context.modals[parameter];
-    }
-
+    context: any = {}
+    
     setTemplate() {
         this.scrollToTop();
     }
