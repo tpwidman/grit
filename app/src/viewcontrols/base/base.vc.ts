@@ -6,8 +6,8 @@ export default class BaseViewControl extends ui.ViewControl {
     protected Promise: async.IPromise = acquire(async.IPromise);
     protected scrollingContainer: HTMLElement = <HTMLElement>this.document.body;
 
-    context: any = {};
-
+    context: any = {}
+    
     setTemplate() {
         this.scrollToTop();
     }

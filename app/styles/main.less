@@ -2,13 +2,6 @@
 
 @import '../styles/typography.less';
 @import '../styles/variables.less';
-@import '../src/templatecontrols/footer/footer.tc.less';
-@import '../src/templatecontrols/navbar/navbar.tc.less';
-@import '../src/viewcontrols/home/home.vc.less';
-@import '../src/viewcontrols/start/start.vc.less';
-@import '../src/viewcontrols/settings/settings.vc.less';
-@import '../src/viewcontrols/tasks/tasks.vc.less';
-@import '../src/viewcontrols/lists/lists.vc.less';
 
 .drawer {
     background-color: rgba(255, 255, 255, 1);
@@ -32,6 +25,10 @@
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.overflow {
+    padding-top: 2em;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row nowrap;
@@ -39,3 +36,14 @@
     align-items: center;
     align-content: center;
 }
+
+@import '../src/templatecontrols/footer/footer.tc.less';
+@import '../src/templatecontrols/modal/modal.tc.less';
+@import '../src/templatecontrols/navbar/navbar.tc.less';
+
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/lists/lists.vc.less';
+@import '../src/viewcontrols/settings/settings.vc.less';
+@import '../src/viewcontrols/start/start.vc.less';
+@import '../src/viewcontrols/tasks/task-detail/task-detail.less';
+@import '../src/viewcontrols/tasks/tasks.vc.less';
