@@ -21,6 +21,7 @@ export default class MyApp extends App {
     error(ev: events.ErrorEvent<Error>): void {
         console.log(ev.error);
     }
+    
 }
 
 register.app('app', MyApp, [
