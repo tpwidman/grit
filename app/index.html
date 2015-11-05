@@ -9,6 +9,22 @@
     </head>
     <body>
         <plat-viewport></plat-viewport>
+        
+         <plat-drawer class="drawer" plat-options="{ position: 'top' }">
+            <plat-link plat-options="{ view: '', isUrl: true }" class="drawer-item">
+                <span>Home</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/tasks', isUrl: true }" class="drawer-item">
+                <span>Portfolio</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/about', isUrl: true }" class="drawer-item">
+                <span>About</span>
+            </plat-link>
+            <plat-link plat-options="{ view: '/connect', isUrl: true }" class="drawer-item">
+                <span>Connect</span>
+            </plat-link>
+        </plat-drawer>
+        
         <script type="text/javascript" src="dist/app.js"></script>
     </body>
 </html>
