@@ -2,9 +2,40 @@
 
 @import '../styles/typography.less';
 @import '../styles/variables.less';
-
+@import '../src/templatecontrols/footer/footer.tc.less';
+@import '../src/templatecontrols/navbar/navbar.tc.less';
 @import '../src/viewcontrols/home/home.vc.less';
 @import '../src/viewcontrols/start/start.vc.less';
 @import '../src/viewcontrols/settings/settings.vc.less';
 @import '../src/viewcontrols/tasks/tasks.vc.less';
 @import '../src/viewcontrols/lists/lists.vc.less';
+
+.drawer {
+    background-color: rgba(255, 255, 255, 1);
+    .drawer-item {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: left;
+        font-size: 26px;
+        text-decoration: none;
+        padding: 1em 0em 1em 1em;
+        color: #000;
+    }
+}
+
+.viewport {
+    background-color: #fff;
+    .overflow {
+        height: 100vh;
+        overflow: scroll;
+    }
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}

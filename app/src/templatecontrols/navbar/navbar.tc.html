@@ -1,1 +1,17 @@
-<h1>Hello World!</h1>
+<nav class="navbar" id="nav" plat-visible="{{showNavbar}}">
+    <ul class="nav-list flex-container">
+        <plat-link plat-options="{view: home}"><li class="flex-item">Home</li></plat-link>
+        <plat-link plat-options="{view: tasks}"><li class="flex-item">Tasks</li></plat-link>
+        <plat-link plat-options="{view: lists}"><li class="flex-item">Lists</li></plat-link>
+        <plat-link plat-options="{view: settings}"><li class="flex-item">Settings</li></plat-link>
+    </ul>
+</nav>
+<div class="container">
+    <div class="drawer-nav hide-drawer">
+        <plat-drawer-controller class="drawer-controller" plat-name="drawerController">
+            <div class="navbar-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+        </plat-drawer-controller>
+    </div>
+</div>
