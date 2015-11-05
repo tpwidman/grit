@@ -1,9 +1,67 @@
 [plat-control="tasks-vc"] {
-/*****Styling for the Entire Page****/
+	.row {
+		border-top: 1px solid black;
+		.first-col {
+			float:left;
+			text-align: center;
+			margin-left: 2em;
+		}
+		.second-col {
+			float: right;
+			margin-right: 2em;
+			select {
+				width: 10em;
+				background-color: transparent;
+				font-size: .5em;
+			}
+			.select-col {
+				text-align: center;
+				margin-top: 1em;
+			}
+		}
+	}
+	.push {
+		height: 3em;
+	}
+	.footer {
+		text-align: center;
+		button {
+			background-color: transparent;
+			font-family: 'Ostrich-Light';
+			border: 1px solid black;
+			font-size: 2.5em;
+			border-radius: 10%;
+		}
+	}
+}	
+	/*.row {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	select {
+		float: left;
+		font-size: 1.5em;
+		background-color: transparent;
+		width: 5em;
+		//border: 0;
+		text-align: center;
+	}
+}
+	button {
+		background-color: transparent;
+		border: 1px solid black;
+		border-radius: 0%;
+		margin: 0 auto;
+		&:hover {
+		background-color: fade(black, 10%);
+		}
+	}
+}
+/*****Styling for the Entire Page****
 background-color: pink;
 color: white;
 
-/*****Styling for Tasks Options******/
+/*****Styling for Tasks Options******
 	.row {
 			display: -ms-flexbox;
 			display: -webkit-flex;
@@ -31,24 +89,12 @@ color: white;
 			border-top: 1px solid black;
 		}
 }
-/*****Styling for Images for Tasks Options******/
-/*.first-box {
-	background-image: url('http://www.iconsdb.com/icons/preview/black/literature-xxl.png');
-}
-.second-box {
-	background-image: url();
-}
-.third-box {
-	background-image: url();
-}
-.fourth-box {
-	background-image: url();
-}*/
+
 
 .push {
 	margin-bottom: 50%
 }
-/*****Styling for Custom Button Options******/
+
 button {
 	background-color: transparent;
 	border: 1px solid black;
@@ -58,4 +104,4 @@ button {
 	&:hover {
 		background-color: fade(black, 10%);
 	}
-}
+}*/

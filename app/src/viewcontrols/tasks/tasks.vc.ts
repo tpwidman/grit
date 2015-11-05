@@ -1,5 +1,6 @@
 import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
+import ListsViewControl from '../lists/lists.vc';
 
 export default class TasksViewControl extends BaseViewControl {
     templateString: string = require('./tasks.vc.html');
@@ -8,12 +9,9 @@ export default class TasksViewControl extends BaseViewControl {
         showCustomTask: false
     };
     
-    expandCustomTask() {
-        if(this.context.showCustomTask === true) {
-            this.context.showCustomTask = false;
-        } else if(this.context.showCustomTask === false) {
-            this.context.showCustomTask = true;
-        }
+     goToLists(): void {
+      //this needs to navigate to Lists Page//
+        this.navigator.navigate(ListsViewControl);
     }
 }
 

@@ -14,7 +14,7 @@ export default class HomeViewControl extends BaseViewControl {
     }
     
     goToLists(): void {
-      //this needs to navigate to Tasks Page//
+      //this needs to navigate to Lists Page//
         this.navigator.navigate(ListsViewControl);
     }
 }
