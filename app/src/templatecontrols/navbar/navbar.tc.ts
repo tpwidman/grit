@@ -19,7 +19,7 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         tasks: TasksViewControl,
         settings: SettingsViewControl
     }
-
+    
     toggleIcon() : void {
         this.context.showBars = !this.context.showBars;
         this.context.showTimes = !this.context.showTimes;
