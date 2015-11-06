@@ -4,9 +4,7 @@ import BaseViewControl from '../../viewcontrols/base/base.vc';
 import HomeViewControl from '../../viewcontrols/home/home.vc';
 import ListsViewControl from '../../viewcontrols/lists/lists.vc';
 import SettingsViewControl from '../../viewcontrols/settings/settings.vc';
-import StartViewControl from '../../viewcontrols/start/start.vc';
 import TasksViewControl from '../../viewcontrols/tasks/tasks.vc';
-
 
 export default class NavbarTemplateControl extends ui.TemplateControl {
     templateString: string = require('./navbar.tc.html');
