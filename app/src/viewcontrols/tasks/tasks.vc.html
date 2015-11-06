@@ -1,25 +1,56 @@
-<h1>This is the tasks page</h1>
-<div class="container">
-	<div class="row">
-		<div class="col left-col first-box">
-			<h1>Homework</h1></div>
-		<div class="col right-col second-box">
-			<h1>Chores</h1></div>
+<h1> This is the Tasks Page </h1>
+<div class="row">
+	<div class="col first-col">
+		<h3 class="first-row">Type of Task</h3>
 	</div>
-	<div class="row second-row">
-		<div class="col left-col third-box">
-			<h1>Groceries</h1></div>
-		<div class="col right-col fourth-box">
-			<h1>Car</h1></div>
+	<div class="col second-col">
+		<div class="select-col">
+			<select class="first-row">
+				<option selected value="1">Homework</option>
+				<option value="2">Chores</option>
+				<option value="3">Groceries</option>
+				<option value="4">Errands</option>
+			</select>
+		</div>
 	</div>
-	<div class="push"></div>
-	<div class="footer">
-		<button plat-tap="expandCustomTask()">
-			<h1>Create Your Own Tasks</h1>
-		</button>
-		<span class="easeDown" plat-visible="{{showCustomTask}}">
-		<plat-input type="text"></plat-input>
-		<button type="submit">Submit</submit>
-	</span>
+</div>
+<div class="row">
+	<div class="col first-col">
+		<h3 class="first-row">Type of Timer</h3>
 	</div>
+	<div class="col second-col">
+		<div class="select-col">
+			<select class="first-row">
+				<option selected value="1">Tomato</option>
+				<option value="2">Hourglass</option>
+				<option value="3">Flip-Down</option>
+				<option value="4">7-segment</option>
+			</select>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col first-col">
+		<h3 class="first-row">Number of Pomodoro</h3>
+	</div>
+	<div class="col second-col">
+		<div class="select-col">
+			<select class="first-row">
+				<option selected value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+			</select>
+		</div>
+	</div>
+</div>
+<!--This div is only designed to push the content-->
+<div class="push"></div>
+<!--Button-->
+<div class="footer">
+	<button plat-tap="goToLists()">
+		<h1>Add Task</h1>
+	</button>
 </div>
