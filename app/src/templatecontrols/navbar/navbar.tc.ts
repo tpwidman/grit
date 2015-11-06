@@ -4,9 +4,7 @@ import BaseViewControl from '../../viewcontrols/base/base.vc';
 import HomeViewControl from '../../viewcontrols/home/home.vc';
 import ListsViewControl from '../../viewcontrols/lists/lists.vc';
 import SettingsViewControl from '../../viewcontrols/settings/settings.vc';
-import StartViewControl from '../../viewcontrols/start/start.vc';
 import TasksViewControl from '../../viewcontrols/tasks/tasks.vc';
-
 
 export default class NavbarTemplateControl extends ui.TemplateControl {
     templateString: string = require('./navbar.tc.html');
@@ -14,10 +12,17 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
 
     context: any = {
         showNavbar: true,
+        showBars: true,
+        showTimes: false,
         home: HomeViewControl,
         lists: ListsViewControl,
         tasks: TasksViewControl,
         settings: SettingsViewControl
+    }
+
+    toggleIcon() : void {
+        this.context.showBars = !this.context.showBars;
+        this.context.showTimes = !this.context.showTimes;
     }
 
     initialize(): void {

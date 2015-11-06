@@ -1,11 +1,11 @@
 [plat-control="navbar"] {
-	position: fixed;
+	position: absolute;
     top: 0;
     z-index: 100;
     width: 100%;
     color: #000;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 1);
     box-shadow: 0px 0px 5px black;
     ul {
         padding: 0em;
@@ -18,8 +18,10 @@
             text-decoration: underline;
         }
     }
-
-    @media only screen and (max-width: 700px) {
+    .clickeater {
+        z-index: 0;
+    }
+    @media only screen and (max-width: 1025px) {
         .navbar {
             display: none;
         }
@@ -27,7 +29,7 @@
             position: fixed;
             z-index: 100;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.75);
+            background-color: rgba(0, 0, 0, 1);
             -webkit-box-shadow: 0px 0px 5px black;
             -moz-box-shadow: 0px 0px 5px black;
             box-shadow: 0px 0px 5px black;
@@ -38,7 +40,7 @@
         }
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 1024px) {
         .hide-drawer {
             display: none;
         }

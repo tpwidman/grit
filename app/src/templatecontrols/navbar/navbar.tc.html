@@ -8,9 +8,10 @@
 </nav>
 <div class="container">
     <div class="drawer-nav hide-drawer">
-        <plat-drawer-controller class="drawer-controller" plat-name="drawerController">
+        <plat-drawer-controller class="drawer-controller" plat-name="drawerController" plat-tap="toggleIcon()">
             <div class="navbar-icon">
-                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-bars fa-2x" plat-visible="{{showBars}}"></i>
+                <i class="fa fa-times fa-2x" plat-visible="{{showTimes}}"></i>
             </div>
         </plat-drawer-controller>
     </div>

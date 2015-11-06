@@ -5,7 +5,7 @@ export default class ModalTemplateControl extends ui.TemplateControl {
 
     context: any = {
         modal1: false,
-        time: 10
+        time: 100
     }
 
     constructor(){
