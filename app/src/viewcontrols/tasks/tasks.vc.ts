@@ -8,9 +8,8 @@ export default class TasksViewControl extends BaseViewControl {
     context: any = {
         showCustomTask: false
     };
-    
+
      goToLists(): void {
-      //this needs to navigate to Lists Page//
         this.navigator.navigate(ListsViewControl);
     }
 }
