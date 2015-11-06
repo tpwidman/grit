@@ -24,12 +24,12 @@
         "app/src/services/base/base.svc.ts",
         "app/src/templatecontrols/footer/footer.tc.ts",
         "app/src/templatecontrols/modal/modal.tc.ts",
-        "app/src/templatecontrols/navbar/navbar.tc.ts",
         "app/src/main.ts",
+        "app/src/viewcontrols/base/base.vc.ts",
         "app/src/viewcontrols/home/home.vc.ts",
         "app/src/viewcontrols/lists/lists.vc.ts",
         "app/src/viewcontrols/settings/settings.vc.ts",
         "app/src/viewcontrols/tasks/tasks.vc.ts",
-        "app/src/viewcontrols/base/base.vc.ts"
+        "app/src/templatecontrols/navbar/navbar.tc.ts"
     ]
 }
