@@ -6,11 +6,16 @@ export default class TasksViewControl extends BaseViewControl {
     templateString: string = require('./tasks.vc.html');
 
     context: any = {
-        showCustomTask: false
+        showCustomTask: false,
+        taskSelection: '1'
     };
 
      goToLists(): void {
-        this.navigator.navigate(ListsViewControl);
+        this.navigator.navigate(ListsViewControl, {
+            parameters: {
+                id: this.context.taskSelection
+            }
+        });
     }
 }
 

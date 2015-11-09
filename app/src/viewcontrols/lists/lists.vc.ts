@@ -1,10 +1,13 @@
 import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
+import TasksViewControl from '../tasks/tasks.vc';
 
 export default class ListsViewControl extends BaseViewControl {
     templateString: string = require('./lists.vc.html');
 
-    context: any = {};
+    context: any = {
+        taskSelection: ''
+    };
     
     expandTaskDetails() {
     if(this.context.showTaskDetails === true) {
@@ -12,6 +15,10 @@ export default class ListsViewControl extends BaseViewControl {
         } else if(this.context.showTaskDetails === false) {
             this.context.showTaskDetails = true;
         }
+    }
+    
+    navigatedTo(parameters: { id: string; }, query: any): void {
+        this.context.taskSelection = parameters.id;
     }
 }
 

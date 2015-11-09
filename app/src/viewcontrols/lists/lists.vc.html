@@ -1,16 +1,14 @@
 <h1>This is the lists page</h1>
 <div class="row">
 	<div class="col first-col">
-		<h3 class="first-row">((Selected Task))</h3>
+		<h3 class="first-row">{{taskSelection}}</h3>
 	</div>
 	<div class="col second-col">
-		<button>
-			<img src ="../images/icons/arrow-211-24.png" plat-tap="expandTaskDetails()"/>
+		<button plat-tap="expandTaskDetails()">
+			<img src ="../images/icons/arrow-211-24.png"/>
 		</button>
 			<span class="easeDown" plat-visible="{{showTaskDetails}}">
-				<plat-input type="text"></plat-input>
-				<plat-input type="text"></plat-input>
-				<plat-input type="text"></plat-input>
+				<input type="text"></input>
 			</span>
 	</div>
 </div>
