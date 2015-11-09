@@ -119,8 +119,7 @@ export default class HomeViewControl extends BaseViewControl {
 // }
 
 // register.viewControl('home-vc', HomeViewControl);
-}
-=======
+
     }
 
     // function time(secondsRemaing:number, intervalHandle:number){
@@ -222,6 +221,4 @@ export default class HomeViewControl extends BaseViewControl {
     //     seconds: number;
     // }
 
-};
 register.viewControl('home-vc', HomeViewControl);
->>>>>>> 2a052849aac6262da5619005c8f268ed446ed53a
