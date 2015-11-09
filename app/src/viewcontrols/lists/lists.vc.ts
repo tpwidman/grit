@@ -6,7 +6,8 @@ export default class ListsViewControl extends BaseViewControl {
     templateString: string = require('./lists.vc.html');
 
     context: any = {
-        taskSelection: ''
+        taskSelection: '',
+        showTaskDetails: false
     };
     
     expandTaskDetails() {
