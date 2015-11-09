@@ -16,7 +16,6 @@ export default class HomeViewControl extends BaseViewControl {
     goToLists(): void {
       //this needs to navigate to Lists Page//
         this.navigator.navigate(ListsViewControl);
-<<<<<<< HEAD
     };
     
 // function time(secondsRemaing:number, intervalHandle:number){
