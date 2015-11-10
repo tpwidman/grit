@@ -13,7 +13,8 @@ export default class TasksViewControl extends BaseViewControl {
      goToLists(): void {
         this.navigator.navigate(ListsViewControl, {
             parameters: {
-                id: this.context.taskSelection
+                id: this.context.taskSelection,
+                it: this.context.timerSelection
             }
         });
     }

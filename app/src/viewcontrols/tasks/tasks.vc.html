@@ -25,16 +25,17 @@
 	</div>
 	<div class="col second-col">
 		<div class="select-col">
-			<select class="first-row">
-				<option selected value="1">Tomato</option>
-				<option value="2">Hourglass</option>
-				<option value="3">Flip-Down</option>
-				<option value="4">7-segment</option>
+			<!-- The selection for this needs to be linked to modal-->
+			<select class="first-row" plat-bind="timerSelection">
+				<option selected value="Tomato">Tomato</option>
+				<option value="Hourglass">Hourglass</option>
+				<option value="Flip-Down">Flip-Down</option>
+				<option value="7-segment">7-segment</option>
 			</select>
 		</div>
 	</div>
 </div>
-<div class="row">
+<!--<div class="row">
 	<div class="col first-col">
 		<h3 class="first-row">Number of Pomodoro</h3>
 	</div>
@@ -53,6 +54,8 @@
 		</div>
 	</div>
 </div>
+</div>-->
+<div class="row">
     <div class="button-group">
         <plat-button id='default-button'plat-options="{ group: 'colorscheme' }" class="button-primary">Default</plat-button> 
         <plat-button id='light-button'plat-options="{ group: 'colorscheme' }" class="button-success">Light</plat-button>
