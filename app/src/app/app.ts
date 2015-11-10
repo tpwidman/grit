@@ -3,6 +3,7 @@ import HomeViewControl from '../viewcontrols/home/home.vc';
 import TasksViewControl from '../viewcontrols/tasks/tasks.vc';
 import ListsViewControl from '../viewcontrols/lists/lists.vc';
 import SettingsViewControl from '../viewcontrols/settings/settings.vc';
+import SavedlistsViewControl from '../viewcontrols/savedlists/savedlists.vc';
 
 export default class MyApp extends App {
     constructor(router: routing.Router) {
@@ -13,7 +14,8 @@ export default class MyApp extends App {
             { pattern: '/home', view: HomeViewControl },
             { pattern: '/tasks', view: TasksViewControl },
             { pattern: 'lists/:id', view: ListsViewControl },
-            { pattern: '/settings', view: SettingsViewControl }
+            { pattern: '/settings', view: SettingsViewControl },
+            { pattern: '/savedlists', view: SavedlistsViewControl }
         ]);
     }
 
