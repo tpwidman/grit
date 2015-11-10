@@ -6,29 +6,12 @@ export default class SettingsViewControl extends BaseViewControl {
 
     context: any = {
         showCreators:false,
-        showVersion:false,
+        showVersion:false
     };
     
-    expandCreators(){
-       if(this.context.showCreators === true) {
-            this.context.showCreators = false;
-        } else if(this.context.showCreators === false) {
-            this.context.showCreators = true;
-        }
-    }
-    expandVersion(){
-        this.context.showAboutCreators = !this.context.showAboutCreators;
-    }
-    
-    collapseCreators() {
-        if (this.context.showCreators = true) {
-            this.context.showCreators = false;
-        }
-    }
-    collapseVersion() {
-        if (this.context.showCreators = true) {
-            this.context.showCreators = false;
-        }
+    toggleAbout() : void{
+        this.context.showCreators= !this.context.showCreators;
+        this.context.showVersion = !this.context.showVersion;
     }
 }
 
