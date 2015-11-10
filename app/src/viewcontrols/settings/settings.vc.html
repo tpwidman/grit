@@ -1,29 +1,24 @@
-<h1>This is the settings page</h1>
+<div class="box">
+	<h1>settings</h1>
+</div>
+
 <div class="row">
-	<div class="col-phn-8 col-left">
-		<h2>enable colors</h2>
-		<h2>night-mode</h2>
-			<div>
-				<h2>about the creators</h2>
+	<ul class="settings-column">
+		<li>enable colors</li><plat-toggle class="settings"></plat-toggle>
+		<li>night-mode</li><plat-toggle class="settings"></plat-toggle>
+	<div class= "container" plat-tap="toggleAbout()">
+		<li>about the creators</li>
+			<div plat-visible="{{showCreators}}">
+				<img src=""><p class= "title">Jackson- Blue Ranger</p>
+				<img src=""><p class= "title">Afftene- Yellow Ranger</p>
+				<img src=""><p class= "title">Taylor- Red Ranger</p>	
 			</div>
-			<div class="easeDown" plat-visible="{{showCreators}}" plat-tap="collapseCreators">
-				<p>Jackson-Blue Ranger
-				Afftene- Yellow Ranger
-				Taylor- Red Ranger</p>
-				
+		<li>about this version</li>
+			<div plat-visible="{{showVersion}}">
+				<p>this is only the first version</p>	
 			</div>
-			<div>
-				<h2>about this version</h2>
-			</div>
-			<div class="easeDown" plat-visible="{{showVersion}}" plat-tap="collapseVersion">
-				<p>this is only the first version</p>
-				
-			</div>
-		<hr>
-		<plat-button class="primary">Badges</plat-button>
 	</div>
-	<div class="col-phn-4 col-right">
-		<plat-toggle></plat-toggle><br>
-		<plat-toggle></plat-toggle>
-	
+		<hr>
+		<li plat-button class="primary">Badges</plat-button></li>
+	</ul>
 </div>
