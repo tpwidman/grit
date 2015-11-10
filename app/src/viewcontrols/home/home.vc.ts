@@ -2,7 +2,7 @@ import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
 import TasksViewControl from '../tasks/tasks.vc';
 import ListsViewControl from '../lists/lists.vc';
-
+import SavedlistsViewControl from '../savedlists/savedlists.vc';
 export default class HomeViewControl extends BaseViewControl {
     templateString: string = require('./home.vc.html');
 
@@ -13,9 +13,9 @@ export default class HomeViewControl extends BaseViewControl {
         this.navigator.navigate(TasksViewControl);
     }
 
-    goToLists(): void {
-      //this needs to navigate to Lists Page//
-        this.navigator.navigate(ListsViewControl);
+    goToSavedLists(): void {
+      //this needs to navigate to SavedLists Page//
+        this.navigator.navigate(SavedlistsViewControl);
     };
     
 // function time(secondsRemaing:number, intervalHandle:number){
