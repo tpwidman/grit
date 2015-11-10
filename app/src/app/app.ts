@@ -13,7 +13,7 @@ export default class MyApp extends App {
             { pattern: '', view: HomeViewControl },
             { pattern: '/home', view: HomeViewControl },
             { pattern: '/tasks', view: TasksViewControl },
-            { pattern: 'lists/:id', view: ListsViewControl },
+            { pattern: 'lists/:id/:it', view: ListsViewControl },
             { pattern: '/settings', view: SettingsViewControl },
             { pattern: '/savedlists', view: SavedlistsViewControl }
         ]);
