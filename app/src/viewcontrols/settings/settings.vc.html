@@ -1,24 +1,41 @@
-<div class="box">
-	<h1>settings</h1>
+<div class="container">
+	<div class="box">
+		<h1>settings</h1>
+	</div>
 </div>
 
 <div class="row">
-	<ul class="settings-column">
-		<li>enable colors</li><plat-toggle class="settings"></plat-toggle>
-		<li>night-mode</li><plat-toggle class="settings"></plat-toggle>
-	<div class= "container" plat-tap="toggleAbout()">
-		<li>about the creators</li>
-			<div plat-visible="{{showCreators}}">
-				<img src=""><p class= "title">Jackson- Blue Ranger</p>
-				<img src=""><p class= "title">Afftene- Yellow Ranger</p>
-				<img src=""><p class= "title">Taylor- Red Ranger</p>	
-			</div>
-		<li>about this version</li>
-			<div plat-visible="{{showVersion}}">
-				<p>this is only the first version</p>	
-			</div>
+	<div class="diagonal-lines col-phn-2"></div>
+	<div class="settings-column col-phn-10">
+		<h4>enable colors</h4><plat-toggle></plat-toggle>
+		<h4>night-mode</h4><plat-toggle></plat-toggle>
+		<h4 class= "aboutsection" plat-tap="toggleAbout()">about the creators</h4>
 	</div>
+</div>
+			<div plat-visible="{{showCreators}}">
+				<div class="image-container col-phn-3">
+					<img src="../images/profiles/jackson.jpg">
+				</div>
+				<div class="description col-phn-9">
+					<h4 class= "title">Jackson></h4>
+					<p>- Blue Ranger</p>
+				</div>
+				<div class="image-container col-phn-3">
+					<img src="../images/profiles/afftene.jpg">
+				</div>
+				<div class="description col-phn-9">
+					<h4 class= "title">Afftene</h4>
+					<p>- Yellow Ranger</p>
+				</div>
+				<div class="image-container col-phn-3">
+					<img src="../images/profiles/taylor.jpg">
+				</div>
+				<div class="description col-phn-9">
+						<h4 class= "title">Taylor</h4>
+						<p>- Red Ranger</p>
+				</div>
+		</div>
 		<hr>
-		<li plat-button class="primary">Badges</plat-button></li>
-	</ul>
+		<plat-button class="primary" id="heavy-button">Badges</plat-button>
+	</div>
 </div>

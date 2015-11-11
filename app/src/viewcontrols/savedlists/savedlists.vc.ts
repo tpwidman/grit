@@ -1,41 +1,24 @@
-import {register} from 'platypus';
+import {register, storage} from 'platypus';
 import BaseViewControl from '../base/base.vc';
-import TasksViewControl from '../tasks/tasks.vc';
 import ListsViewControl from '../lists/lists.vc';
-import TaskRepository from '../../repositories/task/task.repo';
 
 export default class SavedlistsViewControl extends BaseViewControl {
     templateString: string = require('./savedlists.vc.html');
 
-    context: contexts.ISavedListContext = {
-        tasks: []
-        };
-        
-    constructor(private taskRepo: TaskRepository) {
-        super();
-    }
-    
-    navigatedTo() {
-        this.taskRepo.getTask().then((parsetasks) => {
-            for (var index = 0; index < parsetasks.length; index++) {
-                var element = parsetasks[index];
-                this.context.tasks.push(element);
-            }
-        });
-    }  
-}
-   
+    context: any = {};
 
- /*  constructor (private storage: storage.LocalStorage) {
-        super()
+    constructor (private storage: storage.LocalStorage) {
+        super();
         // We want to store the user id in local storage
-        this.storage.setItem('', taskSelection);
-        
+        var uid: number = 0;
+        this.storage.setItem('userid', uid);
+
         // To get the userid out of storage
-        this.storage.getItem('taskSelection');
-    
-    }*/
-register.viewControl('savedlists-vc', SavedlistsViewControl, [TaskRepository]);
+        this.storage.getItem('userid');
+
+    }
+}
+register.viewControl('savedlists-vc', SavedlistsViewControl, [storage.LocalStorage]);
 
 /*So What do we need to store
 1) Type of Task
@@ -43,4 +26,3 @@ register.viewControl('savedlists-vc', SavedlistsViewControl, [TaskRepository]);
 3) Input Info
 4) Number of Pomos
 5) Amount of Time */
-
