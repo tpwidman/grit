@@ -3,9 +3,9 @@
 		<h1>lists</h1>
 	</div>
 </div>
-<div class="row">
+<!--<div class="row">
 	<h1 class="first-row">{{taskSelection}}</h1>
-</div>
+</div>-->
 <div class="row">
 	<h2 class="second-row">Timer: {{timerSelection}}</h2>
 </div>
@@ -13,16 +13,16 @@
 	<div class="first-col">
 		<h2>MyGRIT list:</h2>
 		<div class="easeDown" plat-visible="{{showTaskDetails}}">
-			<input class="hiddeninputs" type="text" placeholder="e.g. Wash Dishes"></input>
-			<select>
+			<input class="hiddeninputs" plat-bind="task1Name" type="text" placeholder="e.g. Wash Dishes"></input>
+			<select plat-bind="task1pomo">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
 				<option value="4">4</option>
 			</select>
 			<br>
-			<input class="hiddeninputs" type="text"></input>
-			<select>
+			<input class="hiddeninputs" plat-bind="task2Name" type="text"></input>
+			<select plat-bind="task2pomo">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>

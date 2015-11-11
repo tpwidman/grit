@@ -8,12 +8,18 @@ export default class ListsViewControl extends BaseViewControl {
     context: any = {
         taskSelection: '',
         timerSelection:'',
-        showTaskDetails: false
+        showTaskDetails: false,
+        task1Name: '',
+        task2Name: '',
+        task1Pomo:'',
+        task2Romo:''
+        
     };
 
     expandTaskDetails() {
         this.context.showTaskDetails = !this.context.showTaskDetails;
     };
+    
 
     navigatedTo(parameters: { id: string; it: string; }, query: any): void {
         this.context.taskSelection = parameters.id;
