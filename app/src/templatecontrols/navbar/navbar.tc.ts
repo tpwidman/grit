@@ -12,17 +12,10 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
 
     context: any = {
         showNavbar: true,
-        showBars: true,
-        showTimes: false,
         home: HomeViewControl,
         lists: ListsViewControl,
         tasks: TasksViewControl,
         settings: SettingsViewControl
-    }
-    
-    toggleIcon() : void {
-        this.context.showBars = !this.context.showBars;
-        this.context.showTimes = !this.context.showTimes;
     }
 
     initialize(): void {

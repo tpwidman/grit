@@ -6,10 +6,6 @@
 @import '../styles/colorscheme/medium.less';
 @import '../styles/colorscheme/light.less';
 
-.plat-clickeater {
-    z-index: 10 !important;
-}
-
 .drawer {
     background-color: rgba(255, 255, 255, 1);
     .drawer-item {
@@ -36,6 +32,10 @@
     padding-top: 2em;
 }
 
+.float-left {
+    float: left;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row nowrap;
@@ -47,6 +47,7 @@
     text-align: center;
     padding:10px;
 }
+
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/modal/modal.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';

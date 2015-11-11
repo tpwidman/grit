@@ -1,5 +1,9 @@
+<plat-resources>
+    <injectable alias="format">format</injectable>
+</plat-resources>
 <plat-modal class="modal" plat-options="{ transition: 'up' }" plat-bind="modal1">
-    <plat-button plat-tap="toggleModal()">Toggle</plat-button>
-    
-    <h1>{{time}}</h1>
+    <plat-button class="float-left" plat-tap="toggleModal()">X</plat-button>
+    <h1>{{@format.formatTime(time)}}</h1>
+    <plat-button class="button-primary" plat-tap="startTimer()">Start</plat-button>
+    <plat-button class="button-danger" plat-tap="stopTimer()">Stop</plat-button>
 </plat-modal>
