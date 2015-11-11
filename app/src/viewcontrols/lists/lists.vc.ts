@@ -11,11 +11,6 @@ export default class ListsViewControl extends BaseViewControl {
         taskSelection: '',
         timerSelection:'',
         showTaskDetails: false,
-        task1Name: '',
-        task2Name: '',
-        task1Pomo:'',
-        task2Romo:''
-        
         task: {
             TypeOfTask: '',
             TypeOfTimer: '',
