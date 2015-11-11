@@ -6,7 +6,6 @@ import './app/app';
 import './templatecontrols/footer/footer.tc';
 import './templatecontrols/modal/modal.tc';
 import './templatecontrols/navbar/navbar.tc';
-import '../styles/variables.less';
 
 document.getElementById('heavy-button').onclick = switchHeavy;
 document.getElementById('medium-button').onclick = switchMedium;
