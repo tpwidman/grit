@@ -1,24 +1,30 @@
 import {register, storage} from 'platypus';
 import BaseViewControl from '../base/base.vc';
 import ListsViewControl from '../lists/lists.vc';
+import TasksViewControl from '../tasks/tasks.vc';
+import TaskRepository from '../../repositories/task/task.repo';
 
 export default class SavedlistsViewControl extends BaseViewControl {
     templateString: string = require('./savedlists.vc.html');
 
-    context: any = {};
-
-    constructor (private storage: storage.LocalStorage) {
-        super();
-        // We want to store the user id in local storage
-        var uid: number = 0;
-        this.storage.setItem('userid', uid);
-
-        // To get the userid out of storage
-        this.storage.getItem('userid');
-
-    }
+    context: contexts.ISavedListContext = {
+         tasks: []
+         };
+         
+     constructor(private taskRepo: TaskRepository) {
+         super();
+     }
+     
+     navigatedTo() {
+         this.taskRepo.getTask().then((parsetasks) => {
+             for (var index = 0; index < parsetasks.length; index++) {
+                 var element = parsetasks[index];
+                 this.context.tasks.push(element);
+             }
+         });
+     }  
 }
-register.viewControl('savedlists-vc', SavedlistsViewControl, [storage.LocalStorage]);
+register.viewControl('savedlists-vc', SavedlistsViewControl, [TaskRepository]);
 
 /*So What do we need to store
 1) Type of Task
