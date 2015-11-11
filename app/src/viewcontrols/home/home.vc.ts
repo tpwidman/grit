@@ -16,7 +16,7 @@ export default class HomeViewControl extends BaseViewControl {
     goToSavedLists(): void {
       //this needs to navigate to SavedLists Page//
         this.navigator.navigate(SavedlistsViewControl);
-    };
+    }
     
 // function time(secondsRemaing:number, intervalHandle:number){
 //     var secondsRemaining;
@@ -120,7 +120,7 @@ export default class HomeViewControl extends BaseViewControl {
 
 // register.viewControl('home-vc', HomeViewControl);
 
-    }
+}
 
     // function time(secondsRemaing:number, intervalHandle:number){
     //     var secondsRemaining : number;

@@ -15,7 +15,7 @@ export default class MyApp extends App {
             { pattern: '/tasks', view: TasksViewControl },
             { pattern: 'lists/:id/:it', view: ListsViewControl },
             { pattern: '/settings', view: SettingsViewControl },
-            { pattern: '/savedlists', view: SavedlistsViewControl }
+            { pattern: '/savedlists/', view: SavedlistsViewControl }
         ]);
     }
 
