@@ -1,13 +1,13 @@
 @import '../../node_modules/platypusui/dist/platypus';
 @import '../styles/typography.less';
 @import '../styles/variables.less';
-@import '../styles/colorscheme/default.less';
-@import '../styles/colorscheme/heavy.less';
-@import '../styles/colorscheme/medium.less';
-@import '../styles/colorscheme/light.less';
 
 .plat-clickeater {
     z-index: 10 !important;
+}
+
+body, html, select {
+	font-family: 'Ostrich-Regular';
 }
 
 .drawer {
@@ -43,9 +43,21 @@
     align-items: center;
     align-content: center;
 }
+
 .box {
     text-align: center;
-    padding:10px;
+    border:.1em solid black;
+    margin-top:.75em;
+}
+
+.container{
+    padding:1.7em 6.5em 0em;
+}
+
+h1{
+    font-family:'Lobster';
+    padding-top:0em;
+    margin-bottom:0em;
 }
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/modal/modal.tc.less';

@@ -6,6 +6,7 @@ import './app/app';
 import './templatecontrols/footer/footer.tc';
 import './templatecontrols/modal/modal.tc';
 import './templatecontrols/navbar/navbar.tc';
+import '../styles/variables.less';
 
 document.getElementById('heavy-button').onclick = switchHeavy;
 document.getElementById('medium-button').onclick = switchMedium;
@@ -14,7 +15,7 @@ document.getElementById('default-button').onclick = switchDefault;
 
 function switchHeavy() {
   document.getElementsByTagName('body')[0].style.backgroundColor = '@heavy-3'; 
-  document.getElementsByTagName('body')[0].style.color = '@heavy-1'; 
+  document.getElementsByTagName('body')[0].style.color = '@heavy-1';
 }
 
 function switchMedium() {
