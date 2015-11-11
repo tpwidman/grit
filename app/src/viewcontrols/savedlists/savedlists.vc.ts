@@ -10,12 +10,6 @@ export default class SavedlistsViewControl extends BaseViewControl {
     constructor (private storage: storage.LocalStorage) {
 
         super()
-    }
-}
-
-register.viewControl('savedlists-vc', SavedlistsViewControl);
-
-        super();
         // We want to store the user id in local storage
         var uid: number = 0;
         this.storage.setItem('userid', uid);
