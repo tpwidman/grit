@@ -3,9 +3,15 @@
 		<h1>lists</h1>
 	</div>
 </div>
+<<<<<<< HEAD
 <!--<div class="row">
 	<h1 class="first-row">{{taskSelection}}</h1>
 </div>-->
+=======
+<div class="row">
+	<h1 class="first-row" plat-bind="task.TypeOfTask">{{taskSelection}}</h1>
+</div>
+>>>>>>> cc33cfa01c18a4eb618bc1128afa5340342ef8d9
 <div class="row">
 	<h2 class="second-row">Timer: {{timerSelection}}</h2>
 </div>
@@ -13,16 +19,26 @@
 	<div class="first-col">
 		<h2>MyGRIT list:</h2>
 		<div class="easeDown" plat-visible="{{showTaskDetails}}">
+<<<<<<< HEAD
 			<input class="hiddeninputs" plat-bind="task1Name" type="text" placeholder="e.g. Wash Dishes"></input>
 			<select plat-bind="task1pomo">
+=======
+			<input class="hiddeninputs" type="text" placeholder="e.g. Wash Dishes" plat-bind="TaskDetails"></input>
+			<select>
+>>>>>>> cc33cfa01c18a4eb618bc1128afa5340342ef8d9
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
 				<option value="4">4</option>
 			</select>
 			<br>
+<<<<<<< HEAD
 			<input class="hiddeninputs" plat-bind="task2Name" type="text"></input>
 			<select plat-bind="task2pomo">
+=======
+			<!--<input class="hiddeninputs" type="text"></input>
+			<select>
+>>>>>>> cc33cfa01c18a4eb618bc1128afa5340342ef8d9
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -51,7 +67,7 @@
 				<option value="2">2</option>
 				<option value="3">3</option>
 				<option value="4">4</option>
-			</select>
+			</select>-->
 		</div>
 	</div>
 	<div class="second-col">
@@ -67,42 +83,7 @@
 	<h2> Total Time: </h2>
 </div>
 <div class="footer">
-	<button>
-		<h1> Add Task </h2>
+	<button plat-tap="craftMyTask()">
+		<h1> Add Task </h1>
 	</button>
 </div>
-
-<!--<div class="sub-row one">
-	<h2>Timer:</h2>
-	<h2>((type of hourglass goes here))</h2>
-</div>
-<div class="sub-row two">
-	<h2>MyGRIT list</h2>
-	<span class="easeDown" plat-visible="{{showTaskDetails}}">
-				<input type="text"></input>
-			</span>
-	<button class="down-button" plat-tap="expandTaskDetails()">
-		<img src="../images/icons/arrow-211-24.png" />
-	</button>
-</div>-->
-
-
-<!--
-	<div class="col second-col">
-		<button plat-tap="expandTaskDetails()">
-			<img src="../images/icons/arrow-211-24.png" />
-		</button>
-		<span class="easeDown" plat-visible="{{showTaskDetails}}">
-				<input type="text"></input>
-			</span>
-	</div>
-	-->
-
-<!--This div is only designed to push the content
-<div class="push"></div>
-<!--Button
-<div class="footer">
-	<button>
-		<h2>Start</h2>
-	</button>
-</div>-->
