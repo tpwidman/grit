@@ -7,9 +7,10 @@ export default class SettingsViewControl extends BaseViewControl {
     context: any = {
         showCreators:false
     };
-    
+
     toggleAbout() : void{
         this.context.showCreators= !this.context.showCreators;
+
     }
 }
 
