@@ -11,5 +11,9 @@ export default class BaseService {
 	protected Promise: async.IPromise;
 	protected utils: Utils;
 
-    host: string = 'my-host';
+   host: string = 'https://api.parse.com/1/classes/Grit';
+    reqHeaders: any = {
+				"X-Parse-Application-Id": "TsLHqTChMOhoOf8Cy4c1FKyvA7GH2TZnql9o5ZBX",
+				"X-Parse-REST-API-Key": "MLkNeIT3hMxAICq1DSmAMnOwjfHI8opRmCDBzMQB"
+	};
 }

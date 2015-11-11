@@ -1,5 +1,9 @@
 <div class="row">
-    
+    <plat-foreach class="taskFormat" plat-context="tasks">
+        <h1>{{ TypeOfTask }}</h1>
+        <h1>{{ TypeOfTimer }}</h1>
+        <h1>{{ TaskDetails }}</h1>
+    </plat-foreach>
 </div>
 <!-- Code Goals for this Page
 1) Settings that should appear on this page:
@@ -9,4 +13,3 @@
 2) click Start button
 3) Timer should start on the pop-up modal
 -->
-

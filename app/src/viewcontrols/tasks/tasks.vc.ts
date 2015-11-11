@@ -7,7 +7,8 @@ export default class TasksViewControl extends BaseViewControl {
 
     context: any = {
         showCustomTask: false,
-        taskSelection: '1'
+        taskSelection: '',
+        timerSelection: ''
     };
 
      goToLists(): void {
