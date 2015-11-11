@@ -9,7 +9,8 @@ export default class SavedlistsViewControl extends BaseViewControl {
 
     constructor (private storage: storage.LocalStorage) {
         super()
-    
 
-register.injectable('storage-repo', Repository, [storage.LocalStorage]);
+    }
+}
+//register.injectable('storage-repo', Repository, [storage.LocalStorage]);
 register.viewControl('savedlists-vc', SavedlistsViewControl);
