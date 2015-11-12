@@ -6,6 +6,15 @@ body, html, select {
 	font-family: 'Ostrich-Regular';
 }
 
+.template {
+    background-color: @light-blue;
+	color: white;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
 .drawer {
     background-color: @very-light-blue;
     .drawer-item {
@@ -23,15 +32,15 @@ body, html, select {
 .viewport {
     background-color: #fff;
     .overflow {
+        overflow: hidden;
         height: 100vh;
     }
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.overflow {
-    overflow: hidden;
-    //padding-top: 2em;
-}
+// // .overflow {
+// //     height: 100vh;
+// }
 
 .flex-container {
     display: flex;
