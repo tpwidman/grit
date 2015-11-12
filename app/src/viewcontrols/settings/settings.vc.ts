@@ -5,7 +5,7 @@ export default class SettingsViewControl extends BaseViewControl {
     templateString: string = require('./settings.vc.html');
 
     context: any = {
-        showCreators:false
+        showCreators: false
     };
 
     toggleAbout() : void{
