@@ -8,14 +8,14 @@ export default class TasksViewControl extends BaseViewControl {
     context: any = {
         showCustomTask: false,
         taskSelection: '',
-        timerSelection: ''
+        //timerSelection: ''
     };
 
-     goToLists(): void {
+     goToCraftList(): void {
         this.navigator.navigate(ListsViewControl, {
             parameters: {
                 id: this.context.taskSelection,
-                it: this.context.timerSelection
+                //it: this.context.timerSelection
             }
         });
     }
