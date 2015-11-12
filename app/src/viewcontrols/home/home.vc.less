@@ -16,33 +16,40 @@
 	h2 {
 		font-size: 2em;
 	}
-    .row {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        margin-top: 1em;
-        .col {
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            float: left;
-            border-radius: 15%;
-            background-color: @lime;
-            box-shadow: 5px 4px 4px @blue;
-            font-family: 'Ostrich-Regular';
-        }
-        .start-block {
-            margin-left: 1em;
-            &:hover {
-                background-color: fade(white,10%);
-            }
-        }
-        .list-block {
-            margin-left: 1em;
-            margin-right: 1em;
-            &:hover {
-            background-color: fade(white,10%);
-            }
-        }
-    }
+		.row {
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			margin-top: 1em;
+			.col {
+				-webkit-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				float: left;
+				border-radius: 15%;
+				background-color: @lime;
+				box-shadow: 5px 4px 4px @blue;
+				//padding: 1em;
+				font-family: 'Ostrich-Regular';
+				text-align: center;
+			}
+			.start-block {
+				margin-left: 1em;
+				padding-bottom:1em;
+				&:hover {
+				background-color: fade(white,10%,.5);
+				margin-top:.25em;
+			}
+			}
+			.list-block {
+				margin-left: 1em;
+				margin-right: 1em;
+				padding-bottom:1em;
+				//border-left: 1px solid white;
+				&:hover {
+				background-color: fade(white,10%,.5);
+				margin-top:.25em;
+				}
+			}
+		}
 }
