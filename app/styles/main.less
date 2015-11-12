@@ -7,15 +7,15 @@ body, html, select {
 }
 
 .drawer {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: @light-blue;
     .drawer-item {
         display: flex;
         flex-flow: column wrap;
-        text-align: left;
-        font-size: 26px;
+        text-align: center;
+        font-size: 30px;
         text-decoration: none;
         padding: 1em 0em 1em 1em;
-        color: #000;
+        color: @white;
     }
 }
 
@@ -29,7 +29,7 @@ body, html, select {
 
 .overflow {
     overflow: hidden;
-    padding-top: 2em;
+    //padding-top: 2em;
 }
 
 .flex-container {
@@ -72,7 +72,9 @@ h1{
     padding: 0.4em;
 }
 
-
+.white {
+    color: @white;
+}
 @import '../src/templatecontrols/footer/footer.tc.less';
 @import '../src/templatecontrols/modal/modal.tc.less';
 @import '../src/templatecontrols/navbar/navbar.tc.less';
