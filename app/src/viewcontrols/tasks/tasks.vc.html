@@ -3,6 +3,7 @@
 		<h1>tasks</h1>
 	</div>
 </div>
+<h1>What needs to get done?</h1>
 <div class="row">
 	<div class="col first-col">
 		<h3 class="first-row">Type of Task</h3>
@@ -14,51 +15,16 @@
 				<option value="Chores">Chores</option>
 				<option value="Groceries">Groceries</option>
 				<option value="Errands">Errands</option>
+				<option value="Appointments">Appointments</option>
+				
 			</select>
 		</div>
 	</div>
 </div>
-<div class="row">
-	<div class="col first-col">
-		<h3 class="first-row">Type of Timer</h3>
-	</div>
-	<div class="col second-col">
-		<div class="select-col">
-			<!-- The selection for this needs to be linked to modal-->
-			<select class="first-row" plat-bind="timerSelection">
-				<option selected value="Tomato">Tomato</option>
-				<option value="Hourglass">Hourglass</option>
-				<option value="Flip-Down">Flip-Down</option>
-				<option value="7-segment">7-segment</option>
-			</select>
-		</div>
-	</div>
-</div>
-<!--<div class="row">
-	<div class="col first-col">
-		<h3 class="first-row">Number of Pomodoro</h3>
-	</div>
-	<div class="col second-col">
-		<div class="select-col">
-			<select class="first-row">
-				<option selected value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-                <option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-                <option value="8">8</option>
-			</select>
-		</div>
-	</div>
-</div>
-</div>-->
-<!--This div is only designed to push the content-->
-<div class="push"></div>
+
 <!--Button-->
 <div class="footer">
-	<button plat-tap="goToLists()">
+	<button plat-tap="goToCraftList()">
 		<h2>Add Task</h2>
 	</button>
 </div>
