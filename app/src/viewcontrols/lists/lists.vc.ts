@@ -15,6 +15,9 @@ export default class ListsViewControl extends BaseViewControl {
             TypeOfTask: '',
             TypeOfTimer: '',
             TaskDetails: '',
+            TaskDetailsTwo: '',
+            TaskDetailsThree: '',
+            TaskDetailsFour: '',
             TotalNumOfPomo: 0
         }
     };
@@ -25,9 +28,9 @@ export default class ListsViewControl extends BaseViewControl {
     };
     
 
-    navigatedTo(parameters: { id: string; it: string; }, query: any): void {
+    navigatedTo(parameters: { id: string; /* it: string;*/ }, query: any): void {
         this.context.taskSelection = this.context.task.TypeOfTask = parameters.id;
-        this.context.timerSelection = this.context.task.TypeOfTimer = parameters.it;
+        //this.context.timerSelection = this.context.task.TypeOfTimer = parameters.it;
     };
     
     constructor(private taskRepo: TaskRepository) {
@@ -37,8 +40,11 @@ export default class ListsViewControl extends BaseViewControl {
     craftMyTask(): void {
         var sendToParse: models.ITask = {
             TypeOfTask: this.context.task.TypeOfTask,
-            TypeOfTimer: this.context.task.TypeOfTimer,
+            //TypeOfTimer: this.context.task.TypeOfTimer,
             TaskDetails: this.context.task.TaskDetails,
+            TaskDetailsTwo: this.context.task.TaskDetailsTwo,
+            TaskDetailsThree: this.context.task.TaskDetailsThree,
+            TaskDetailsFour: this.context.task.TaskDetailsFour,
             TotalNumOfPomo: this.context.task.TotalNumOfPomo
         }
         this.taskRepo.submitTask(sendToParse)

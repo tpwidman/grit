@@ -25,10 +25,3 @@ export default class SavedlistsViewControl extends BaseViewControl {
      }  
 }
 register.viewControl('savedlists-vc', SavedlistsViewControl, [TaskRepository]);
-
-/*So What do we need to store
-1) Type of Task
-2) Type of Timer
-3) Input Info
-4) Number of Pomos
-5) Amount of Time */
