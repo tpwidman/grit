@@ -2,8 +2,9 @@ import {register} from 'platypus';
 
 export default class Format {
     formatTime(seconds: number): string {
-        return 'bitch' + seconds;
-        // convert to string mm:ss
+        var minutes = Math.floor(seconds/60);
+        var seconds = Math.floor(seconds % 60);
+        return minutes + ':' + seconds;
     }
 }
 
