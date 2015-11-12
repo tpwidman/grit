@@ -4,10 +4,10 @@
 	h1 {
 		text-align: center;
 		background-color: @lime;
-		box-shadow: 5px 4px 4px darkgrey;
+		box-shadow: 5px 4px 4px @blue; 
 	}
 	.row {
-		//border-bottom: 1px solid black;
+		margin-top: 1em;
 		.first-col {
 			float: left;
 			text-align: center;
@@ -16,8 +16,21 @@
 		.second-col {
 			float: right;
 			margin-right: 2em;
+			.select-col {
+				text-align: center;
+				margin-top: 1.5em;	
+			}
 			select {
 				width: 10em;
+				background-color: transparent;
+				padding: 2em;
+				font-size: .75em;
+				//font-size: .5em;
+				border: 1px solid white;
+				color: white;
+				option {
+					color: white;
+				}
 				background-color: whitesmoke;
 				font-size: .5em;
 			}
@@ -25,21 +38,23 @@
 				text-align: center;
 				margin-top: 1em;
 			}
+			
 		}
-	}
-	.button-group{
-		text-align: center;
-		padding-top: 2em;
 	}
 	.footer {
 		text-align: center;
 		margin-top: 3em;
 		button {
 			background-color: transparent;
-			font-family: 'Ostrich-Light';
+			box-shadow: 5px 4px 4px @blue; 
+			border: 0;
+			//border-color: white;
+			//font-family: 'Ostrich-Light';
 			//border: 1px solid black;
 			font-size: 2.5em;
 			background-color: @lime;
+			color: white;
+			font-family: 'Ostrich-Light';
 			box-shadow: 5px 4px 4px darkgrey;
 			border-radius:4em;
 			transition: all .3s  ease-in-out;
@@ -50,78 +65,6 @@
 				}
 		}
 	}
-	h1{
-		padding-top:0em;
-	}
 }
-	/*.row {
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	select {
-		float: left;
-		font-size: 1.5em;
-		background-color: transparent;
-		width: 5em;
-		//border: 0;
-		text-align: center;
-	}
-}
-	button {
-		background-color: transparent;
-		border: 1px solid black;
-		border-radius: 0%;
-		margin: 0 auto;
-		&:hover {
-		background-color: fade(black, 10%);
-		}
-	}
-}
-/*****Styling for the Entire Page****
-background-color: pink;
-color: white;
-
-/*****Styling for Tasks Options******
-	.row {
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			.col {
-				-webkit-flex: 1;
-				-ms-flex: 1;
-				flex: 1;
-				float: left;
-				padding: 1em;
-				font-family: 'Ostrich-Regular';
-				text-align: center;
-				&:hover {
-					background-color: fade(black,10%);
-				}
-			}
-			.right-col {
-				border-left: 1px solid black;
-				&:hover {
-				background-color: fade(black,10%);
-				}
-			}
-		}
-		.second-row {
-			border-top: 1px solid black;
-		}
-}
-
-
-.push {
-	margin-bottom: 50%
-}
-
-button {
-	background-color: transparent;
-	border: 1px solid black;
-	border-radius: 0%;
-	margin: 0 auto;
-	//height: 100%;
-	&:hover {
-		background-color: fade(black, 10%);
-	}
-}*/
+	
+	
