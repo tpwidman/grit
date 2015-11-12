@@ -35,7 +35,6 @@ export default class ModalTemplateControl extends ui.TemplateControl {
     resetTimer() {
         this.stopTimer();
         this.context.time = this.initialTime;
-        this.startTimer();
     }
 
     // getTimeRemaining(endtime: string){
