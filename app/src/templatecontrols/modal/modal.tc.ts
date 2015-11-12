@@ -21,6 +21,7 @@ export default class ModalTemplateControl extends ui.TemplateControl {
     }
 
     startTimer() {
+        this.stopTimer();
         this.countdown = setInterval(() => {
             if(this.context.time > 0) {
                 this.context.time--;
