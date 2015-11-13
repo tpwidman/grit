@@ -1,16 +1,16 @@
 <h1> Saved Lists </h1>
 <plat-foreach class="savedListFormat" plat-context="tasks">
-     <div class="row title-row">
-            <h1 class="title-of-task">{{ TypeOfTask }}</h1>
-     </div>
-            <h2>MyGRIT list:</h2>
-            <p>{{ TaskDetails }}</p>
-            <p>{{ TaskDetailsTwo }}</p>
-            <p>{{ TaskDetailsThree }}</p>
-            <p>{{ TaskDetailsFour }}</p>
-            <h2>Number of Pomodoros:</h2>
-            <!--<h2>Timer:</h2>-->
-        </div>
+    <div class="row title-row">
+        <h1 class="title-of-task">{{ TypeOfTask }}</h1>
+    </div>
+    <div class="first-col">
+        <h2>MyGRIT list:</h2>
+        <p>{{ TaskDetails }}</p><p>{{ pomo1 }}</p>
+        <p>{{ TaskDetailsTwo }}</p><p>{{ pomo2 }}</p>
+        <p>{{ TaskDetailsThree }}</p><p>{{ pomo3 }}</p>
+        <p>{{ TaskDetailsFour }}</p><p>{{ pomo4 }}</p>
+        <h2>Number of Pomodoros: {{TotalNumOfPomo}}</h2>
+        <!--<h2>Timer:</h2>-->
     </div>
 </plat-foreach>
 
@@ -45,4 +45,3 @@
 2) click Start button
 3) Timer should start on the pop-up modal
 -->
-
