@@ -11,6 +11,10 @@ export default class SavedlistsViewControl extends BaseViewControl {
          showSavedListDetails: false,
          tasks: []
          };
+     
+     expandSavedListDetails() {
+        this.context.showSavedListDetails = !this.context.showSavedListDetails;
+    };
          
      constructor(private taskRepo: TaskRepository) {
          super();
@@ -24,9 +28,5 @@ export default class SavedlistsViewControl extends BaseViewControl {
              }
          });
      }
-     
-      expandSavedListDetails() {
-        this.context.showSavedListDetails = !this.context.showSavedListDetails;
-    };  
 }
 register.viewControl('savedlists-vc', SavedlistsViewControl, [TaskRepository]);

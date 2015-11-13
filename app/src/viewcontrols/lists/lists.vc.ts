@@ -9,11 +9,11 @@ export default class ListsViewControl extends BaseViewControl {
 
     context: contexts.IListsContext = {
         taskSelection: '',
-        timerSelection:'',
+        //timerSelection:'',
         showTaskDetails: false,
         task: {
             TypeOfTask: '',
-            TypeOfTimer: '',
+            //TypeOfTimer: '',
             TaskDetails: '',
             TaskDetailsTwo: '',
             TaskDetailsThree: '',
