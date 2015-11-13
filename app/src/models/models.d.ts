@@ -7,12 +7,16 @@ declare module models {
 		TaskDetailsTwo: string;
 		TaskDetailsThree: string;
 		TaskDetailsFour: string;
+        pomo1: number;
+        pomo2: number;
+        pomo3: number;
+        pomo4: number;
 		objectId?: string;
 		prettyDate?: string;
 		updatedAt?: Date;
 		TotalNumOfPomo: number;
 	}
-	
+
 	interface IResponse {
 		results: Array<ITask>;
 	}
@@ -26,7 +30,7 @@ declare module contexts {
 		tasks: Array<models.ITask>;
 		showSavedListDetails: boolean;
 	}
-	
+
 	interface IListsContext {
 		taskSelection: string;
 		//timerSelection: string;
