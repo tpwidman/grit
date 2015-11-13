@@ -10,16 +10,16 @@ export default class SavedlistsViewControl extends BaseViewControl {
     context: contexts.ISavedListContext = {
          showSavedListDetails: false,
          tasks: []
-         };
-     
+    };
+
      expandSavedListDetails() {
         this.context.showSavedListDetails = !this.context.showSavedListDetails;
-    };
-         
+     };
+
      constructor(private taskRepo: TaskRepository) {
          super();
      }
-     
+
      navigatedTo() {
          this.taskRepo.getTask().then((parsetasks) => {
              for (var index = 0; index < parsetasks.length; index++) {
