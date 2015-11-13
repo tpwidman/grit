@@ -18,18 +18,24 @@ export default class ListsViewControl extends BaseViewControl {
             TaskDetailsTwo: '',
             TaskDetailsThree: '',
             TaskDetailsFour: '',
-            pomo1: null,
-            pomo2: null,
-            pomo3: null,
-            pomo4: null,
+            pomo1: '',
+            pomo2: '',
+            pomo3: '',
+            pomo4: '',
             TotalNumOfPomo: 0
         }
     };
 
-    initialize() {
-        setInterval(() => {
-            this.context.task.pomo1 + this.context.task.pomo2 + this.context.task.pomo3 + this.context.task.pomo4;
-        }, 1000);
+    sumPomodoros() {
+        var arr = [
+                parseInt(this.context.task.pomo1),
+                parseInt(this.context.task.pomo2),
+                parseInt(this.context.task.pomo3),
+                parseInt(this.context.task.pomo4)
+            ];
+        this.context.task.TotalNumOfPomo = arr.reduce(function(a,b) {
+            return a + b;
+        });
     }
 
 

@@ -7,10 +7,10 @@ declare module models {
 		TaskDetailsTwo: string;
 		TaskDetailsThree: string;
 		TaskDetailsFour: string;
-        pomo1: number;
-        pomo2: number;
-        pomo3: number;
-        pomo4: number;
+        pomo1: string;
+        pomo2: string;
+        pomo3: string;
+        pomo4: string;
 		objectId?: string;
 		prettyDate?: string;
 		updatedAt?: Date;
