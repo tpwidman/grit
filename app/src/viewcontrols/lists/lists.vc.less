@@ -1,5 +1,15 @@
 [plat-control="lists-vc"] {
     .template;
+	
+	.container {
+		.box{
+			h1 {
+				background-color: @lime;
+				box-shadow: 5px 4px 4px @blue;
+				padding-top: 0em;
+			}
+		}
+	}
 	.row {
 		margin-left: 1em;
 		.first-row {
@@ -8,9 +18,9 @@
 	}
 	.first-col {
 		float: left;
-	/*	.easeDown {
-			float: left;
-		}*/
+		h2 {
+			text-align: left;
+		}
 		.hiddeninputs {
 			border: 1px solid black;
 			margin-bottom: .75em;
@@ -21,6 +31,12 @@
 	}
 	.second-col {
 		float: right;
+		button {
+			background-color: transparent;
+			margin-right: 1em;
+			margin-top: 1em;
+			border: 0em;
+		}
 	}
 	
 	.pomo-row {
@@ -35,12 +51,18 @@
 		text-align: center;
 		button {
 		width: 80%;
-		background-color: transparent;
-		border: 1px solid black;
-		font-family: 'Ostrich-Regular';
-			&:hover {
-				background-color: black;
-				color: white;
+		background-color: @lime;
+		box-shadow: 5px 4px 4px @blue; 
+		border-radius: 4em;
+		font-size: 2.5em;
+		color: white;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		//margin-right: 1em;
+		border: 0;
+			h1 {
+				font-family: 'Ostrich-Light';
+				padding-top: 0em;
 			}
 		}
 	}
