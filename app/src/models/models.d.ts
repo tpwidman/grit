@@ -1,9 +1,12 @@
 declare module models {
 	interface ITask {
 		TypeOfTask: string;
-		TypeOfTimer: string;
+		//TypeOfTimer: string;
 		createdAt?: Date;
 		TaskDetails: string;
+		TaskDetailsTwo: string;
+		TaskDetailsThree: string;
+		TaskDetailsFour: string;
 		objectId?: string;
 		prettyDate?: string;
 		updatedAt?: Date;
@@ -25,7 +28,7 @@ declare module contexts {
 	
 	interface IListsContext {
 		taskSelection: string;
-		timerSelection: string;
+		//timerSelection: string;
 		showTaskDetails: boolean;
 		task: models.ITask;
 	}

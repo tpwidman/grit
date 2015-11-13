@@ -1,24 +1,22 @@
 <div class="container">
 	<div class="box">
-		<h1>lists</h1>
+		<h1>Craft-Your-Task</h1>
 	</div>
 </div>
 <!--<div class="row">
 	<h1 class="first-row">{{taskSelection}}</h1>
 </div>-->
 <div class="row">
-	<h1 class="first-row" plat-bind="task.TypeOfTask">{{taskSelection}}</h1>
+	<h2 class="first-row" plat-bind="TypeOfTask">Task Chosen: {{taskSelection}}</h2>
 </div>
-<div class="row">
+<!--<div class="row">
 	<h2 class="second-row">Timer: {{timerSelection}}</h2>
-</div>
+</div>-->
 <div class="row">
 	<div class="first-col">
 		<h2>MyGRIT list:</h2>
 		<div class="easeDown" plat-visible="{{showTaskDetails}}">
-			<input class="hiddeninputs" plat-bind="task1Name" type="text" placeholder="e.g. Wash Dishes"></input>
-			<select plat-bind="task1pomo">
-			<input class="hiddeninputs" type="text" placeholder="e.g. Wash Dishes" plat-bind="TaskDetails"></input>
+			<input class="hiddeninputs" type="text" placeholder="e.g. Wash Dishes" plat-bind="task.TaskDetails"></input>
 			<select>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -26,9 +24,7 @@
 				<option value="4">4</option>
 			</select>
 			<br>
-			<input class="hiddeninputs" plat-bind="task2Name" type="text"></input>
-			<select plat-bind="task2pomo">
-			<!--<input class="hiddeninputs" type="text"></input>
+			<input class="hiddeninputs" type="text" placeholder="e.g. Laundry" plat-bind="task.TaskDetailsTwo"></input>
 			<select>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -36,7 +32,7 @@
 				<option value="4">4</option>
 			</select>
 			<br>
-			<input class="hiddeninputs" type="text"></input>
+			<input class="hiddeninputs" type="text" placeholder="e.g. Rake Leaves" plat-bind="task.TaskDetailsThree"></input>
 			<select>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -44,21 +40,13 @@
 				<option value="4">4</option>
 			</select>
 			<br>
-			<input class="hiddeninputs" type="text"></input>
+			<input class="hiddeninputs" type="text" placeholder="e.g. Mop Floors" plat-bind="task.TaskDetailsFour"></input>
 			<select>
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
 				<option value="4">4</option>
 			</select>
-			<br>
-			<input class="hiddeninputs" type="text"></input>
-			<select>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-			</select>-->
 		</div>
 	</div>
 	<div class="second-col">
@@ -67,7 +55,7 @@
 		</button>
 	</div>
 </div>
-<div class="row">
+<div class="row pomo-row">
 	<h2>Total Number of Pomodoro:</h2>
 </div>
 <div class="row time-row">
