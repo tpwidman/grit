@@ -18,15 +18,24 @@ export default class ListsViewControl extends BaseViewControl {
             TaskDetailsTwo: '',
             TaskDetailsThree: '',
             TaskDetailsFour: '',
+            pomo1: null,
+            pomo2: null,
+            pomo3: null,
+            pomo4: null,
             TotalNumOfPomo: 0
         }
     };
+
+    initialize() {
+        setInterval(() => {
+            this.context.task.pomo1 + this.context.task.pomo2 + this.context.task.pomo3 + this.context.task.pomo4;
+        }, 1000);
+    }
 
 
     expandTaskDetails() {
         this.context.showTaskDetails = !this.context.showTaskDetails;
     };
-
 
     navigatedTo(parameters: { id: string; /* it: string;*/ }, query: any): void {
         this.context.taskSelection = this.context.task.TypeOfTask = parameters.id;
@@ -45,6 +54,10 @@ export default class ListsViewControl extends BaseViewControl {
             TaskDetailsTwo: this.context.task.TaskDetailsTwo,
             TaskDetailsThree: this.context.task.TaskDetailsThree,
             TaskDetailsFour: this.context.task.TaskDetailsFour,
+            pomo1: this.context.task.pomo1,
+            pomo2: this.context.task.pomo2,
+            pomo3: this.context.task.pomo3,
+            pomo4: this.context.task.pomo4,
             TotalNumOfPomo: this.context.task.TotalNumOfPomo
         }
         this.taskRepo.submitTask(sendToParse)
