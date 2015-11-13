@@ -11,7 +11,11 @@
 </div>-->
 <div class="row">
 	<div class="first-col">
-		<h2>MyGRIT list:</h2>
+		<h2>MyGRIT list:
+		<button class="expand-button" plat-tap="expandTaskDetails()">
+			<img src="../images/plus-5-32.png" />
+		</button>
+		</h2>
 		<div class="easeDown" plat-visible="{{showTaskDetails}}">
 			<input class="hiddeninputs" type="text" placeholder="e.g. Wash Dishes" plat-bind="task.TaskDetails"></input>
             <input class="hiddeninputs" type="number" placeholder="1" plat-bind="task.pomo1">
@@ -42,6 +46,7 @@
 			<br>
 			<input class="hiddeninputs" type="text" placeholder="e.g. Mop Floors" plat-bind="task.TaskDetailsFour"></input>
             <input class="hiddeninputs" type="number" placeholder="1" plat-bind="task.pomo4">
+			<hr class="line">
             <plat-button class="sumPomo" plat-tap="sumPomodoros()">Total Pomodori</plat-button>
 			<!--<select>
 				<option value="1">1</option>
@@ -90,11 +95,6 @@
 				</li>-->
 
 		</div>
-	</div>
-	<div class="second-col">
-		<button class="expand-button" plat-tap="expandTaskDetails()">
-			<img src="../images/plus-5-32.png" />
-		</button>
 	</div>
 </div>
 <div class="row pomo-row">
