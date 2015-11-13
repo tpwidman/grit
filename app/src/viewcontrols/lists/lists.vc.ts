@@ -9,11 +9,11 @@ export default class ListsViewControl extends BaseViewControl {
 
     context: contexts.IListsContext = {
         taskSelection: '',
-        timerSelection:'',
+        //timerSelection: '',
         showTaskDetails: false,
         task: {
             TypeOfTask: '',
-            TypeOfTimer: '',
+            //TypeOfTimer: '',
             TaskDetails: '',
             TaskDetailsTwo: '',
             TaskDetailsThree: '',
@@ -21,18 +21,18 @@ export default class ListsViewControl extends BaseViewControl {
             TotalNumOfPomo: 0
         }
     };
-    
+
 
     expandTaskDetails() {
         this.context.showTaskDetails = !this.context.showTaskDetails;
     };
-    
+
 
     navigatedTo(parameters: { id: string; /* it: string;*/ }, query: any): void {
         this.context.taskSelection = this.context.task.TypeOfTask = parameters.id;
         //this.context.timerSelection = this.context.task.TypeOfTimer = parameters.it;
     };
-    
+
     constructor(private taskRepo: TaskRepository) {
         super();
     }
