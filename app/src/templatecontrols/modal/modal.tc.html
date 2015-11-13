@@ -2,9 +2,14 @@
     <injectable alias="format">format</injectable>
 </plat-resources>
 <plat-modal class="modal customModalStyle" plat-options="{ transition: 'up' }" plat-bind="modal1">
-    <h1>{{@format.formatTime(time)}}</h1>
-    <plat-button class="button-primary" plat-tap="startTimer()">Start</plat-button>
+    <h2>{{@format.formatTime(time)}}</h2>
+    <plat-button class="button-success" plat-tap="startTimer()">Start</plat-button>
     <plat-button class="button-danger" plat-tap="stopTimer()">Stop</plat-button>
-    <plat-button class="button-secondary" plat-tap="resetTimer()">Reset</plat-button>
-    <i class="fa fa-times fa-2x float-left bottom normal-padding white" plat-tap="toggleModal()"></i>
+    <plat-button class="button-primary" plat-tap="resetTimer()">Reset</plat-button>
+    <br>
+    <h2>{{@format.formatTime(breakTime)}}</h2>
+    <plat-button class="button-success" plat-tap="startBreak()">Start</plat-button>
+    <plat-button class="button-danger" plat-tap="stopBreak()">Stop</plat-button>
+    <plat-button class="button-primary" plat-tap="resetBreak()">Reset</plat-button>
+    <i class="fa fa-times fa-2x float-left bottom normal-padding darkgrey" plat-tap="toggleModal()"></i>
 </plat-modal>

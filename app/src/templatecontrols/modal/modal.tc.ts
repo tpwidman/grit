@@ -5,7 +5,8 @@ export default class ModalTemplateControl extends ui.TemplateControl {
 
     context: any = {
         modal1: false,
-        time: 25*60
+        time: 25*60,
+        breakTime: 5*60
     }
 
     private countdown: NodeJS.Timer;
@@ -38,35 +39,26 @@ export default class ModalTemplateControl extends ui.TemplateControl {
         this.context.time = this.initialTime;
     }
 
-    // getTimeRemaining(endtime: string){
-    //     var deadline = (Date.;
-    //     var t = Date.parse(endtime) - Date.parse(new Date());
-    //     var seconds = Math.floor( (t/1000) % 60 );
-    //     var minutes = Math.floor( (t/1000/60) % 60 );
-    //     var hours = Math.floor( (t/(1000*60*60)) % 24 );
-    //     var days = Math.floor( t/(1000*60*60*24) );
-    //     return {
-    //         'total': t,
-    //         'days': days,
-    //         'hours': hours,
-    //         'minutes': minutes,
-    //         'seconds': seconds
-    //     };
-    // }
+    private breakdown: NodeJS.Timer;
+    private initialBreak: number = 5*60;
 
-    // initializeClock(id: string, endtime: string){
-    //     var clock = document.getElementById(id);
-    //     var timeinterval = setInterval(function() {
-    //         var t = function getTimeRemaining(endtime: string);
-    //         clock.innerHTML = 'days: ' + t.days + '<br>' +
-    //                         'hours: '+ t.hours + '<br>' +
-    //                         'minutes: ' + t.minutes + '<br>' +
-    //                         'seconds: ' + t.seconds;
-    //         if(t.total<=0){
-    //         clearInterval(timeinterval);
-    //         }
-    //     }, 1000);
-    // }
+    startBreak() {
+        this.stopTimer();
+        this.breakdown = setInterval(() => {
+            if(this.context.breakTime > 0) {
+                this.context.breakTime--;
+            }
+        }, 1000);
+    }
+
+    stopBreak() {
+        clearInterval(this.breakdown);
+    }
+
+    resetBreak() {
+        this.stopTimer();
+        this.context.breakTime = this.initialBreak;
+    }
 }
 
 register.control('modal', ModalTemplateControl);
