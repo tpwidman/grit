@@ -1,4 +1,4 @@
-import {register, storage} from 'platypus';
+import {register} from 'platypus';
 import BaseViewControl from '../base/base.vc';
 import ListsViewControl from '../lists/lists.vc';
 import TasksViewControl from '../tasks/tasks.vc';
@@ -8,6 +8,7 @@ export default class SavedlistsViewControl extends BaseViewControl {
     templateString: string = require('./savedlists.vc.html');
 
     context: contexts.ISavedListContext = {
+         showSavedListDetails: false,
          tasks: []
          };
          
@@ -22,6 +23,10 @@ export default class SavedlistsViewControl extends BaseViewControl {
                  this.context.tasks.push(element);
              }
          });
-     }  
+     }
+     
+      expandSavedListDetails() {
+        this.context.showSavedListDetails = !this.context.showSavedListDetails;
+    };  
 }
 register.viewControl('savedlists-vc', SavedlistsViewControl, [TaskRepository]);

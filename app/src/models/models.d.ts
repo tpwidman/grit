@@ -24,6 +24,7 @@ declare module contexts {
 		module, you must call "models" and then the name of
 		the interface*/
 		tasks: Array<models.ITask>;
+		showSavedListDetails: boolean;
 	}
 	
 	interface IListsContext {

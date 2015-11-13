@@ -1,12 +1,27 @@
-<div class="row">
-    <plat-foreach class="taskFormat" plat-context="tasks">
-        <h1>{{ TypeOfTask }}</h1>
-        <p>{{ TaskDetails }}</p>
-        <p>{{ TaskDetailsTwo }}</p>
-        <p>{{ TaskDetailsThree }}</p>
-        <p>{{ TaskDetailsFour }}</p>
-    </plat-foreach>
-</div>
+<h1> Saved Lists </h1>
+<plat-foreach class="savedListFormat" plat-context="tasks">
+    <div class="row title-row">
+        <div class="first-col">
+            <h1 class="title-of-task">{{ TypeOfTask }}</h1>
+            <div class="saved-list-row-title easeDown" plat-visible="{{showSavedListDetails}}">
+                <span>
+                    <h1>MyGRIT list:</h1>
+                    <p>{{ TaskDetails }}</p>
+                    <p>{{ TaskDetailsTwo }}</p>
+                    <p>{{ TaskDetailsThree }}</p>
+                    <p>{{ TaskDetailsFour }}</p>
+                    <h2>Number of Pomodoros:</h2>
+                    <h2>Timer:</h2>
+                </span>
+            </div>
+        </div>
+        <div class="second-col">
+            <button class="expand-button" plat-tap="expandSavedListDetails()">
+                <img src="../images/plus-2-32 white.png" />
+            </button>
+        </div>
+    </div>
+</plat-foreach>
 <!-- Code Goals for this Page
 1) Settings that should appear on this page:
    a) Name of Task
@@ -15,3 +30,4 @@
 2) click Start button
 3) Timer should start on the pop-up modal
 -->
+
