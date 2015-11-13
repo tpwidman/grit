@@ -11,6 +11,19 @@
 	h2 {
 		font-size: 2em;
 	}
+	h4{
+		font-family:TopSecret;
+		font-size:5em;
+		padding-top:0;
+		margin-bottom: .4em;
+	}
+	.box1 {
+    font-family: Menulis;
+	background-color:@blue;
+    overflow: hidden;
+	border-radius: 15%;
+  	.longShadow(darken(@light-blue, 20%), 100);
+}
 		.row {
 			display: -ms-flexbox;
 			display: -webkit-flex;
@@ -33,10 +46,11 @@
 				padding-bottom:1em;
 				transition: all .3s  ease-in-out;
 				&:hover {
-				background-color: fade(white,10%,.5);
-				margin-top:.25em;
-				transition: all .3s  ease-in-out;
-			}
+					background-color: fade(@very-light-blue,100%,.5);
+					margin-top:.25em;
+					color:@blue;
+					transition: all .3s  ease-in-out;
+				}
 			}
 			.list-block {
 				margin-left: 1em;
@@ -45,9 +59,10 @@
 				transition: all .3s  ease-in-out;
 				//border-left: 1px solid white;
 				&:hover {
-				background-color: fade(white,10%,.5);
-				margin-top:.25em;
-				transition: all .3s  ease-in-out;
+					background-color: fade(@very-light-blue,100%,.5);
+					margin-top:.25em;
+					color:@blue;
+					transition: all .3s  ease-in-out;
 				}
 			}
 		}
